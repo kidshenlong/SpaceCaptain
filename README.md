@@ -16,8 +16,13 @@ To do
 ============
 
 1) The game currently uses the old mysql driver. This is slow and insecure. PDO would be a much more suitable driver.
+
 2) Creating a experience that didn't rely on Javascript was great but impractical. Rewriting many of the components that used hard form submissions and refreshes could greatly improve performance/usability and overall experience.
+
 3) A new folder structure
-4) Functions and classes to create DRY code.
+
+4) Functions and classes to create DRY code
+
 5) Maybe MVC
+
 6) HTML5
