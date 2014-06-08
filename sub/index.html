@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Untitled Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.placeholder.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('input, text').placeholder();
+
+            $("#register").hide();
+            $("#loginb").hide();
+
+            $("#registerb").show();
+
+            $("#register").css("top", "25px");
+
+            $("#loginb").click(function () {
+                $("#loginb").fadeOut();
+
+                $("#registerb").fadeIn();
+                $("#register").fadeOut();
+                $("#form1").animate({height: '120'});
+                $("#login").fadeIn();
+
+
+            });
+
+            $("#registerb").click(function () {
+
+                $("#registerb").fadeOut();
+                $("#loginb").fadeIn();
+                $("#login").fadeOut();
+                $("#form1").animate({height: '150'});
+                $("#register").fadeIn();
+
+
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+<div id='logo'>
+    <img src="logo.png"/>
+</div>
+<div id="form1">
+    <input type="button" id="loginb" value="login"/>
+    <input type="button" id="registerb" value="register"/>
+
+
+    <div id="login">
+
+        <table>
+            <tr>
+                <td><input type="text" maxlength="20" placeholder="Email" name="emaillogin" id="emaillogin"/></td>
+            </tr>
+            <tr>
+                <td><input type="password" maxlength="20" placeholder="Password" name="passwdlogin" id="passwdlogin"/>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Login" name="loginbutton" id="loginbutton"/></td>
+            </tr>
+        </table>
+
+    </div>
+    <div id="register">
+
+        <table>
+            <tr>
+                <td><input type="text" maxlength="20" placeholder="Email" name="emaillogin" id="emaillogin"/></td>
+            </tr>
+            <tr>
+                <td><input type="password" maxlength="20" placeholder="Password" name="passwdlogin1" id="passwdlogin1"/>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="password" maxlength="20" placeholder="Verify Password" name="passwdlogin2"
+                           id="passwdlogin2"/></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Register" name="registerbutton" id="registerbutton"/></td>
+            </tr>
+
+        </table>
+
+    </div>
+</div>
+
+
+</body>
+</html>

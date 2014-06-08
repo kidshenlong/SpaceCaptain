@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+@media only screen and (min-width: 800px) {
+
+    body {
+        font-family: Helvetica;
+        letter-spacing: -1.5px;
+        font-weight: 100;
+        text-align: center;
+        padding-bottom: 0px;
+        font-size: 24px;
+
+        background-color: #ededed;
+    }
+
+}
+
+html, body {
+    height: 90%;
+}
+
+@media only screen and (max-width: 799px) {
+
+    body {
+        background-color: red;
+    }
+}
+
+#noscriptdiv {
+    background-color: #ae0000;
+    color: #fff;
+
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 101;
+}
+
+#loginForm {
+    text-align: left;
+    border: 1px solid #777;
+    width: 180px;
+    /*float:left;*/
+    padding: auto;
+    margin: 5% auto auto auto;
+}
+
+#wrapper {
+    color: #FFF;
+
+    /*important!!!*/
+    margin-top: 30px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 7px;
+    border-style: solid;
+    border-color: #ffcc00;
+    /*width:1213px;
+    height:1700px;*/
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    /*overflow:overflow;*/
+}
+
+#top {
+
+    background-color: #000;
+    width: 100%;
+    border-bottom: 2px solid #ffcc00;;
+
+}
+
+#sidebar {
+    background-color: #000;
+
+    width: 100%;
+
+    height: 100px;
+
+    background-color: #000;
+    width: 100%;
+    border-bottom: 2px solid #ffcc00;
+    height: auto;
+    overflow: overflow;
+}
+
+#sidebar ul li {
+    font-size: 24px;
+    display: inline-block;
+
+    padding: 3px;
+
+}
+
+#statbar {
+    font-size: 15px;
+    text-align: left;
+    background-color: #000;
+
+    background-color: #000;
+    width: 100%;
+    border-bottom: 2px solid #ffcc00;;
+    width: 100%;
+
+    height: auto;
+    overflow: overflow;
+}
+
+#statbar ul {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#statbar ul li {
+    font-size: 14px;
+    display: inline-block;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+    padding: 3px;
+
+}
+
+#game {
+    background-color: #000;
+
+    width: 100%;
+    height: 100%;
+    min-height: 666px;
+
+}
+
+#game1 {
+    background-color: #000;
+
+    width: 100%;
+    height: 100%;
+    min-height: 666px;
+
+}
+
+#galaxy {
+    border: 1px solid #FFF;
+}
+
+#game table, td, th {
+    /*margin-top:10%;*/
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid green;
+    width: 80%;
+}
+
+th {
+    background-color: green;
+
+}
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background-color: green;
+    }
+}
+
+/* iPhone < 5:*/
+@media screen and (device-aspect-ratio: 2/3) {
+    body {
+        background-color: pink;
+    }
+}
+
+/*iPhone 5:*/
+@media screen and (device-aspect-ratio: 40/71) {
+    body {
+        background-color: blue;
+    }
+
+    html, body {
+        height: 90%;
+    }
+
+}
